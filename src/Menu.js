@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import LinesEllipsis from 'react-lines-ellipsis'
-
+import "./assets/css/main.css";
 import './Menu.css';
 
 function Menu({ name, desc, img, key, Origin_price, DC_price }) {

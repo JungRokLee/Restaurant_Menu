@@ -6,17 +6,6 @@
     font-size:14px;
 }
 
-.App__Main{
-    width:100%;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    box-sizing:content-box;
-    font-size:14px;
-    text-overflow: ellipsis;
-    
-}
-
 .App--loading{
     display: flex;
     justify-content: center;
