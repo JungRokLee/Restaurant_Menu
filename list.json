@@ -61,28 +61,28 @@
         {
             "id": "1",
             "name": "버섯 샐러드",
-            "Origin_price": "7,000",
+            "DC_price": "7,000",
             "img": "https://modo-phinf.pstatic.net/20181120_218/1542671444844rUsDE_JPEG/mosafx701c.jpeg?type=w720",
             "desc": "싱싱한 야채에 가득한 버섯"
         },
         {
             "id": "2",
             "name": "리코타 치즈 샐러드",
-            "Origin_price": "7,000",
+            "DC_price": "7,000",
             "img": "https://modo-phinf.pstatic.net/20181120_218/1542671444844rUsDE_JPEG/mosafx701c.jpeg?type=w720",
             "desc": "싱싱한 야채에 고소한 리코타 치즈가 덮혀 있는 샐러드"
         },
         {
             "id": "3",
             "name": "치킨 샐러드",
-            "Origin_price": "7,000",
+            "DC_price": "7,000",
             "img": "https://modo-phinf.pstatic.net/20181120_268/1542672145073kP8iJ_JPEG/mosannqygE.jpeg?type=f540_540",
             "desc": "치킨과 샐러드의 환상의 조합"
         },
         {
             "id": "4",
             "name": "자몽에이드 피쳐 (2인)",
-            "Origin_price": "5,000",
+            "DC_price": "5,000",
             "img": "https://modo-phinf.pstatic.net/20181120_218/1542671444844rUsDE_JPEG/mosafx701c.jpeg?type=w720",
             "desc": "샐러드와 잘 어울리는 달콤한 자몽에이드가 2인을 위한 합리적인 가격으로"
         }
@@ -135,7 +135,7 @@
             "name": "리코타 치즈 피자",
             "Origin_price": "19,000",
             "DC_price": "14,900",
-            "img": "https://modo-phinf.pstatic.net/20181120_218/1542671444844rUsDE_JPEG/mosafx701c.jpeg?type=w720",
+            "img": "https://modo-phinf.pstatic.net/20181120_108/15426721566784cfny_JPEG/mosaGga1Vv.jpeg?type=f540_540",
             "desc": " "
         },
         {

@@ -4,6 +4,7 @@ import LinesEllipsis from 'react-lines-ellipsis'
 import "./assets/css/main.css";
 import './Menu.css';
 
+
 function Menu({ name, desc, img, key, Origin_price, DC_price }) {
     return (
 
@@ -15,12 +16,11 @@ function Menu({ name, desc, img, key, Origin_price, DC_price }) {
 
             <div className="Menu__Column">
                 <h1> {name} </h1>
-
-                <div className="Menu__Price">
-                    <MenuPrice Origin_price={Origin_price} DC_price={DC_price} />
-                </div>
-
-                <div className="Movie__Synopsis">
+                <OriginPrice Origin_price={Origin_price} /> &nbsp; &nbsp;<DCPrice DC_price={DC_price}  /> 
+            <p>  </p>
+                
+                <div className="Menu__Synopsis">
+           
                     <LinesEllipsis
                         text={desc}
                         maxLine='4'
@@ -29,7 +29,6 @@ function Menu({ name, desc, img, key, Origin_price, DC_price }) {
                         basedOn='letters'
                     />
                 </div>
-
             </div>
         </div>
     )
@@ -41,11 +40,7 @@ function MenuPoster({ img, alt }) {
     )
 }
 
-function MenuGenre({ desc }) {
-    return (
-        <span className="Menu__Genre">{desc}</span>
-    )
-}
+
 
 function MenuDesc({ desc }) {
     return (
@@ -53,9 +48,15 @@ function MenuDesc({ desc }) {
     )
 }
 
-function MenuPrice({ Origin_price, DC_price }) {
+function OriginPrice({ Origin_price }) {
     return (
-        <span className="Menu__Price">{Origin_price} -> {DC_price}</span>
+        <span className="Origin__price"> {Origin_price} </span> 
+    )
+}
+
+function DCPrice({ DC_price }) {
+    return (
+        <span className="DC__price">  {DC_price}</span>
     )
 }
 
@@ -68,18 +69,16 @@ Menu.propTypes = {
 MenuDesc.prototype = {
     desc: PropTypes.string.isRequired
 }
-MenuPrice.prototype = {
-    Origin_Price: PropTypes.string.isRequired,
+OriginPrice.prototype = {
+    Origin_Price: PropTypes.string.isRequired
+}
+DCPrice.prototype = {
     DC_Price: PropTypes.string.isRequired
 }
 
 MenuPoster.propTypes = {
     img: PropTypes.string.isRequired,
     alt: PropTypes.string.isRequired
-}
-
-MenuGenre.propTypes = {
-    desc: PropTypes.string.isRequired
 }
 
 export default Menu
