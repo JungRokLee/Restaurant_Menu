@@ -9,21 +9,22 @@ function Menu({ name, desc, img, key, Origin_price, DC_price }) {
     return (
 
         <div className="Menu">
-
             <div className="Menu__Column">
                 <MenuPoster img={img} alt={name} />
             </div>
 
             <div className="Menu__Column">
+                 {/* 음식 이름*/}
                 <h1> {name} </h1>
+                 {/* 음식 가격*/}
                 <OriginPrice Origin_price={Origin_price} /> &nbsp; &nbsp;<DCPrice DC_price={DC_price}  /> 
             <p>  </p>
-                
-                <div className="Menu__Synopsis">
-           
+
+                {/* 음식 설명*/}
+                <div className="Menu__Synopsis"> 
                     <LinesEllipsis
                         text={desc}
-                        maxLine='4'
+                        maxLine='6'
                         ellipsis='...'
                         trimRight
                         basedOn='letters'
@@ -33,14 +34,12 @@ function Menu({ name, desc, img, key, Origin_price, DC_price }) {
         </div>
     )
 }
-
+//
 function MenuPoster({ img, alt }) {
     return (
         <img src={img} alt={alt} name={alt} className="Menu__Poster" />
     )
 }
-
-
 
 function MenuDesc({ desc }) {
     return (

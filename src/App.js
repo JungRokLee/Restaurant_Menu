@@ -15,7 +15,6 @@ class App extends Component {
 
     this.state = {
       mode: 'standard',
-
       contents: [
         { id: 1, title: 'standard', desc: '시칠리아에서 꾸준히 사랑받는 음식으로 부담없이 맛있게 즐기실 수 있습니다' },
         { id: 2, title: 'salad', desc: '입맛을 돋우는 샐러드로 건강과 맛을 동시에 생각했습니다' },
@@ -23,12 +22,11 @@ class App extends Component {
         { id: 4, title: 'pasta', desc: '세계 최대의 파스타면 생산기업 이탈리아 Baria 사의 스파게티 면과 이탈리아 남단에서 재배된 토마토종을 사용하여 당과 산의 비율이 최적화된 롱고바디 토마토홀' },
         { id: 5, title: 'pizza', desc: '이탈리아산 최상품 밀가루만을 조합해 직접 반죽하고 24시간이상 저온숙성해 485°C 화덕에 구워낸 나폴리 정통 피자' },
         { id: 6, title: 'steak', desc: '호주산 청정우 안심필렛과 일주일간 끓여낸 Fonde veau와 port wine을 배합, 뉴질랜드산 앵커버터로 풍미를 끓어올린 port wine sauce 사용' },
-
       ]
     }
   }
 
-  componentDidMount() { // render가 완료된 후에 _getMovies()를 호출하여 Api를 받아온다
+  componentDidMount() { // render() 가 완료된 후에 _getMovies()를 호출하여 Api를 받아온다
     this._getMenues();
   }
 
@@ -58,7 +56,7 @@ class App extends Component {
   _callApi = () => { //promise -> then -> catch
     var mode = this.state.mode;
     return fetch(
-      "https://api.myjson.com/bins/8yc13"
+      "https://api.myjson.com/bins/sizk7"  //  call myjson api
     )
       .then(res => res.json())
       .then(json => json[mode])
@@ -69,34 +67,34 @@ class App extends Component {
   getContent() {
 
     var _title, _desc = null;
-    var _article = null;
+    var _article = null; // 리턴할 객체
     var key = null;
-    if (this.state.mode === 'standard') { //welcome 모드일 경우
+    if (this.state.mode === 'standard') { //standard 모드일 경우
       _title = this.state.contents[0].title;
       _desc = this.state.contents[0].desc;
       key = this.state.contents[0].id;
       _article = <Header title={_title} _desc={_desc} key={key} > </Header>
-    } else if (this.state.mode === 'salad') { //welcome 모드일 경우
+    } else if (this.state.mode === 'salad') { //salad 모드일 경우
       _title = this.state.contents[1].title;
       _desc = this.state.contents[1].desc;
       key = this.state.contents[1].id;
       _article = <Header title={_title} _desc={_desc} key={key} > </Header>
-    } else if (this.state.mode === 'signature') { //welcome 모드일 경우
+    } else if (this.state.mode === 'signature') { //signature 모드일 경우
       _title = this.state.contents[2].title;
       _desc = this.state.contents[2].desc;
       key = this.state.contents[2].id;
       _article = <Header title={_title} _desc={_desc} key={key} > </Header>
-    } else if (this.state.mode === 'pasta') { //welcome 모드일 경우
+    } else if (this.state.mode === 'pasta') { //pasta 모드일 경우
       _title = this.state.contents[3].title;
       _desc = this.state.contents[3].desc;
       key = this.state.contents[3].id;
       _article = <Header title={_title} _desc={_desc} key={key} > </Header>
-    } else if (this.state.mode === 'pizza') { //welcome 모드일 경우
+    } else if (this.state.mode === 'pizza') { //pizza 모드일 경우
       _title = this.state.contents[4].title;
       _desc = this.state.contents[4].desc;
       key = this.state.contents[4].id;
       _article = <Header title={_title} _desc={_desc} key={key} > </Header>
-    } else if (this.state.mode === 'steak') { //welcome 모드일 경우
+    } else if (this.state.mode === 'steak') { //steak 모드일 경우
       _title = this.state.contents[5].title;
       _desc = this.state.contents[5].desc;
       key = this.state.contents[5].id;
@@ -125,10 +123,7 @@ class App extends Component {
           {this.getContent()} {/* Header 컴포넌트 호출 */}
 
           <div className={menues ? "App" : "App--loading"}>
-
             {menues ? this._renderMenues() : "Loading"}
-
-
           </div>
         </div>
       </div>

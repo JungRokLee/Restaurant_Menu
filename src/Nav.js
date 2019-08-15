@@ -11,34 +11,32 @@ class Nav extends Component {
           <ul className="container">
             <li><a href="#Standard" onClick={function (e) {
               e.stopPropagation();
-              this.props.onChangeMode('standard');
+              this.props.onChangeMode('standard'); // 모드를 standard로 변경
             }.bind(this)}>Standard</a></li>
 
             <li><a href="#Salad" onClick={function (e) {
               e.stopPropagation();
-              this.props.onChangeMode('salad');
+              this.props.onChangeMode('salad');  // 모드를 salad로 변경
             }.bind(this)}>Salad</a></li>
 
             <li><a href="#Signature" onClick={function (e) {
               e.stopPropagation();
-              this.props.onChangeMode('signature');
+              this.props.onChangeMode('signature');  // 모드를 signature로 변경
             }.bind(this)}>Signature</a></li>
 
             <li><a href="#Pasta" onClick={function (e) {
-
               e.stopPropagation();
-              this.props.onChangeMode('pasta');
+              this.props.onChangeMode('pasta');  // 모드를 pasta로 변경
             }.bind(this)}>pasta</a></li>
 
             <li><a href="#Pizza" onClick={function (e) {
               e.stopPropagation();
-              this.props.onChangeMode('pizza');
+              this.props.onChangeMode('pizza');  // 모드를 pizza로 변경
             }.bind(this)}>Pizza</a></li>
 
             <li><a href="#Steak" onClick={function (e) {
-
               e.stopPropagation();
-              this.props.onChangeMode('steak');
+              this.props.onChangeMode('steak');  // 모드를 steak로  변경
             }.bind(this)}>Steak</a></li>
 
           </ul>

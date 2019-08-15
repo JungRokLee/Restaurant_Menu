@@ -11,7 +11,6 @@ class Header extends Component {
 				<article id="top" className="wrapper style1">
 					<div className="container">
 						<div className="row">
-
 							<div className="col-8 col-7-large col-12-medium">
 								<header>
 									 <a href="https://cafesicilia.modoo.at"> <strong><h1>CAFE <strong>SICILIA</strong></h1></strong> </a>
@@ -33,14 +32,9 @@ class Header extends Component {
 						</div>
 					</div>
 				</article>
-
-
 			</div>
-
 		)
-
 	}
-
 }
 
 
