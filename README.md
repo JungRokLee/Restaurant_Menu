@@ -70,4 +70,4 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 경기도 안산시 일동 식물원 앞에 위치한 카페 시칠리아의 메뉴입니다.
 모바일 뷰에 최적화 되어 있습니다. 
 감사합니다.
-모바일 뷰에 최적화 되어 있습니다. 
+
