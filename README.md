@@ -72,5 +72,5 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 감사합니다.
 
 firebase로 deploy 했습니다.
-domain : 
+URL : 
 https://cafe-sicila-menu.firebaseapp.com/
